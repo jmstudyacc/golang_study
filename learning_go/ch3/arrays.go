@@ -40,4 +40,23 @@ func main() {
 	// Go deviates from the norm and makes an array become an array of type size
 	// so [3]int array is a different type to an array that is declared as [4]int
 	// Go array sizes cannot be specified by a variable as types must be resolved at compile time
+
+	// Converting arrays to slices has the same memory sharing issues as slices of slices
+	arr := [4]int{5, 6, 7, 8}
+	asl1 := arr[:2]
+	asl2 := arr[2:]
+	arr[0] = 10
+
+	fmt.Println()
+	fmt.Println("arr:", arr)
+	fmt.Println("asl1:", asl1)
+	fmt.Println("asl2:", asl2)
+
+	// If you need independence from the original you need to use the copy() function - length is important in copy() not capacity
+	arr2 := []int{1, 2, 3, 4}
+	arr3 := make([]int, 4)
+	num := copy(arr3, arr2)
+	fmt.Println()
+	fmt.Println(arr3, num)
+
 }
