@@ -25,7 +25,6 @@ func main() {
 	// Prints 'false' as 500 is NOT in the map
 	fmt.Println(intSet[500])
 
-
 	if intSet[100] {
 		fmt.Println("100 is in the set")
 	} else {

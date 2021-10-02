@@ -29,10 +29,10 @@ func main() {
 
 	// You can include declaration lists to express multiple variables at once
 	var (
-		j int
-		k = 60
-		l int = 70
-		m, n = 80, "Cám ơn"
+		j    int
+		k        = 60
+		l    int = 70
+		m, n     = 80, "Cám ơn"
 		o, p string
 	)
 

@@ -33,7 +33,7 @@ func main() {
 	y = x[:2]
 	fmt.Println()
 	fmt.Println("Appending with slices can create a lot of confusion when the result is output:")
-	fmt.Println("Capacity of 'x':", cap(x),"\nCapacity of 'y':",cap(y))
+	fmt.Println("Capacity of 'x':", cap(x), "\nCapacity of 'y':", cap(y))
 	y = append(y, 30)
 	fmt.Println("\nx:", x)
 	fmt.Println("y:", y)
@@ -44,7 +44,7 @@ func main() {
 	x = append(x, 1, 2, 3, 4)
 	y = x[:2]
 	z = x[2:]
-	fmt.Println("Capacity of 'x':",cap(x), "\nCapacity of 'y':",cap(y), "\nCapacity of 'z':", cap(z))
+	fmt.Println("Capacity of 'x':", cap(x), "\nCapacity of 'y':", cap(y), "\nCapacity of 'z':", cap(z))
 	fmt.Println()
 	y = append(y, 30, 40, 50)
 	x = append(x, 60)
@@ -69,4 +69,3 @@ func main() {
 	fmt.Println("z:", z)
 
 }
-

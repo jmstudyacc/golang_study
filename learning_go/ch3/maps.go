@@ -14,20 +14,20 @@ func main() {
 	fmt.Println()
 
 	// Example of a nonempty map literal
-	teams := map[string][]string {
-		"Orcas": []string{"Fred", "Ralph", "Bijou"},
-		"Lions": []string{"Sarah", "Peter", "Billie"},
+	teams := map[string][]string{
+		"Orcas":   []string{"Fred", "Ralph", "Bijou"},
+		"Lions":   []string{"Sarah", "Peter", "Billie"},
 		"Kittens": []string{"Waldo", "Raul", "Ze"},
 	}
 	fmt.Println(teams)
 
 	// Passing a map to len() tells the number of key-value pairs in the list
-	fmt.Println("Number of key-value pairs in 'teams' variable:",len(teams))
+	fmt.Println("Number of key-value pairs in 'teams' variable:", len(teams))
 	fmt.Println()
 
 	// If you know the number of k, v pairs you will use but not the values, you can use make to make a map
 	ages := make(map[int][]string, 10)
-	fmt.Println("'ages' map:",ages)
+	fmt.Println("'ages' map:", ages)
 	fmt.Println()
 
 	// Slices = lists that are processed sequentially
@@ -48,14 +48,12 @@ func main() {
 	fmt.Println()
 
 	// Deleting from Maps is pretty simple and is done by the delete() function
-	m := map[string]int {
+	m := map[string]int{
 		"hello": 5,
 		"world": 10,
 	}
 	fmt.Println(m)
 	delete(m, "hello")
 	fmt.Println(m)
-
-
 
 }

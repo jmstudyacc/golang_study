@@ -16,9 +16,8 @@ func main() {
 	s4 := s[6:]
 
 	fmt.Println("s:", s)
-	fmt.Println("s2:",s2, "\ns3:",s3, "\ns4:",s4)
+	fmt.Println("s2:", s2, "\ns3:", s3, "\ns4:", s4)
 
 	// Do not slice or index, instead extract substrings and code points using functions in
 	// strings and unicode/utf8 packages
 }
-
